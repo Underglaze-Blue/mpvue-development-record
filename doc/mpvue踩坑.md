@@ -22,7 +22,7 @@
         }
     ```
     
-4. 小程序会把 img 标签转化为 image，所以直接给img添加css，在小程序中没有作用,可添加mode属性解决,参考[小程序image](https://developers.weixin.qq.com/miniprogram/dev/component/image.html)
+4. 小程序会把 img 标签转化为 image，所以直接给img标签添加css，在小程序中没有作用,可通过添加class名解决，可添加mode属性解决缩放问题,参考[小程序image](https://developers.weixin.qq.com/miniprogram/dev/component/image.html)
 
     ```html
         <img class="wx_image" :src="item.headUrl" mode="widthFix"/>
